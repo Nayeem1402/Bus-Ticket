@@ -50,7 +50,7 @@
         </div>
     </nav>
     <!--********************************  main section start *************************************  -->
-    <main class="hidden">
+    <main class=" ">
         <!-- **************************8****  main banner section*************************************** [url('images/banner.png')] -->
         <section class="mx-2 flex justify-center lg:mx-36 ">
             <div
@@ -200,191 +200,293 @@
 
 
         </section>
-    </main>
-
-   <div>
 
 
-    <div class="hidden">
-        <div class="max-w-[513px] flex flex-col gap-5 mb-5  ">
-            <div>
-                <h3 class="raleway font-semibold text-2xl">Select Your Seat</h3>
-            </div>
-            <hr class="border-dashed border-[#03071233] border-2 ">
-            <div class="inter font-semibold flex justify-between">
-                <div class="flex gap-2"><img src="./images/seat-gray.png" alt="">
-                    <p>Available</p>
+
+        <!-- leaft side  -->
+
+        <div class="flex mx-[132px] justify-evenly  bg-white rounded-xl    mt-11">
+
+            <div class=" mx-32 mt-10">
+                <div class=" flex flex-col gap-5 mb-5  ">
+                    <div>
+                        <h3 class="raleway font-semibold text-2xl">Select Your Seat</h3>
+                    </div>
+                    <hr class="border-dashed border-[#03071233] border-2 ">
+                    <div class="inter font-semibold flex justify-between">
+                        <div class="flex gap-2"><img src="./images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <div class="flex gap-2"><img src="./images/seat-green-filled.png" alt="">
+                            <p>Selected</p>
+                        </div>
+                    </div>
+
+                    <hr class="border-dashed border-[#03071233] border-2 ">
                 </div>
-                <div class="flex gap-2"><img src="./images/seat-green-filled.png" alt="">
-                    <p>Selected</p>
+
+                <!-- bus ticket -->
+                <section class="flex flex-col gap-7 max-w-[513px] min-w-[513px] mb-40">
+                    <div class=" justify-end flex "> <button class="btn max-w-28 min-w-28"><img
+                                src="./images/icons8-steering-wheel-24.png" alt=""></button></div>
+
+
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">A1</button>
+                        <div>
+                            <button onclick="clicked('a1')" id="A1" class="btn sit  max-w-28 min-w-28">A1</button>
+                            <button  onclick="clicked('a2')" id=" A2" class="btn sit max-w-28 min-w-28">A2</button>
+
+                        </div>
+                        <div>
+                            <button onclick="clicked()"  id="A3" class="btn sit max-w-28 min-w-28">A3</button>
+                            <button onclick="clicked()"  id="A4" class="btn sit max-w-28 min-w-28">A4</button>
+
+                        </div>
+                    </div>
+
+
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">B </button>
+                        <div>
+                            <button onclick="clicked()"  id="B1" class="btn sit sitName max-w-28 min-w-28">B1</button>
+                            <button  onclick="clicked()" id="B2" class="btn sit sitName max-w-28 min-w-28">B2</button>
+
+                        </div>
+                        <div>
+                            <button onclick="clicked()"  id="B3" class="btn sit sitName max-w-28 min-w-28">B3</button>
+                            <button onclick="clicked()"  id="B4" class="btn sit sitName max-w-28 min-w-28">B4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">C</button>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">C1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">C2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">C3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">C4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">D</button>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">D1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">D2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">D3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">D4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">E</button>
+                        <div>
+                            <button id="sits" class="btn max-w-28 min-w-28">E1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">E2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">E3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">E4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">F</button>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">F1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">F2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">F3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">F4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">G</button>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">G1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">G2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">G3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">G4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">H</button>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">H1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">H2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">H3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">H4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">I</button>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">I1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">I2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">I3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">I4</button>
+
+                        </div>
+                    </div>
+                    <!-- bus ticket A section  -->
+                    <div class="flex gap-6">
+                        <button class=" max-w-2 min-w-2">J</button>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">J1</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">J2</button>
+
+                        </div>
+                        <div>
+                            <button id="sit" class="btn max-w-28 min-w-28">J3</button>
+                            <button id="sit" class="btn max-w-28 min-w-28">J4</button>
+
+                        </div>
+                    </div>
+
+
+                </section>
+
+            </div>
+
+
+
+
+            <div class=" sm: lg:border-l-4 border-dashed border-[#0307124D]"></div>
+
+
+
+            <!-- RIGHT SIDE  -->
+            <div class=" p-10 capitalize gap-4 flex flex-col max-w-2xl  ">
+
+                <div class="  max-w-[433px]">
+                    <div>
+                        <h3 class="releway font-semibold text-2xl ">Select Your Seat</h3>
+                    </div>
+
+                    <hr class="border-dashed border-[#03071233] max-w-[433px] border-2 ">
+
+                    <div class="bg-[#F7F8F8] p-5 max-h-80 max-w-[433px] gap-3 flex flex-col">
+
+
+                        <div>
+                            <div>
+                                <div class="flex   justify-between">
+                                    <h4>seat <span></span></h4>
+                                    <h4>class</h4>
+                                    <h4>price</h4>
+                                </div>
+
+                            </div>
+                            <hr class="border-dashed border-[#03071233] border-2 ">
+                            <!-- js input ticket info fild  -->
+                            <div class="flex flex-col  gap-2">
+                                <div class="flex justify-between">
+                                    <h4>C2</h4>
+                                    <h4>Economoy</h4>
+                                    <h4>500</h4>
+                                </div>
+                                <div class="flex justify-between">
+                                    <h4>C2</h4>
+                                    <h4>Economoy</h4>
+                                    <h4>500</h4>
+                                </div>
+
+                            </div>
+                            <hr class="  border-[#03071233] border-2 ">
+                            <div class="flex justify-between">
+                                <h4>total</h4>
+                                <h3>BDT 1100</h3>
+                            </div>
+
+                            <!-- coupon fild  -->
+                            <div class="w-[400px]">
+                                <input type="text" class="h-14 max-w-[400px]  w-auto  inter absolute rounded-2xl px-4"
+                                    placeholder="Have any copupon?"> <button
+                                    class="bg-[#1DD100] relative  top-1  px-5 py-3 rounded-2xl text-white inter font-semibold left-56 lg:left-72 ">Apply</button>
+                            </div>
+                            <br>
+                            <!-- grand price -->
+                            <div class="flex justify-between">
+                                <h2>grand total</h2>
+                                <h2>BDT <span>1100</span></h2>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- passenger information section  -->
+
+                    <div class="flex flex-col gap-3">
+                        <h3 class="inter font-semibold ">passenger name*</h3>
+                        <input class="min-w-[433px] h-16 rounded-2xl inter text-[#03071266] p-6" type="text"
+                            placeholder="Enter your name ">
+                        <h3 class="inter font-semibold ">phone number*</h3>
+                        <input class="min-w-[433px] h-16 rounded-2xl inter text-[#03071266] p-6" type="number"
+                            placeholder="Enter your phone number">
+                        <h3 class="inter font-semibold ">email id </h3>
+                        <input class="min-w-[433px] h-16 rounded-2xl inter text-[#03071266] p-6" type="email"
+                            placeholder="Enter your email id">
+                    </div>
+
+                    <div><button
+                            class="bg-[#1DD100]  mt-10 min-w-full raleway font-extrabold px-5 py-3 rounded-2xl text-white inter font-semibold">Next</button>
+                        <div class="mt-3 flex justify-between">
+                            <h4 class="underline inter text-[#03071299] ">Terms and Conditions</h4>
+                            <h4 class="underline inter text-[#03071299] ">Cancellation Policy</h4>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
 
-            <hr class="border-dashed border-[#03071233] border-2 ">
+
         </div>
 
-        <!-- bus ticket -->
-        <section class="flex flex-col gap-7 max-w-[513px] mb-40">
-            <div class=" justify-end flex "> <button class="btn max-w-28 min-w-28"><img
-                        src="./images/icons8-steering-wheel-24.png" alt=""></button></div>
+    </main>
 
 
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">A1</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">A1</button>
-                    <button class="btn max-w-28 min-w-28">A2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">A3</button>
-                    <button class="btn max-w-28 min-w-28">A4</button>
-
-                </div>
-            </div>
-
-
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">B </button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">B1</button>
-                    <button class="btn max-w-28 min-w-28">B2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">B3</button>
-                    <button class="btn max-w-28 min-w-28">B4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">C</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">C1</button>
-                    <button class="btn max-w-28 min-w-28">C2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">C3</button>
-                    <button class="btn max-w-28 min-w-28">C4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">D</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">D1</button>
-                    <button class="btn max-w-28 min-w-28">D2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">D3</button>
-                    <button class="btn max-w-28 min-w-28">D4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">E</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">E1</button>
-                    <button class="btn max-w-28 min-w-28">E2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">E3</button>
-                    <button class="btn max-w-28 min-w-28">E4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">F</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">F1</button>
-                    <button class="btn max-w-28 min-w-28">F2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">F3</button>
-                    <button class="btn max-w-28 min-w-28">F4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">G</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">G1</button>
-                    <button class="btn max-w-28 min-w-28">G2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">G3</button>
-                    <button class="btn max-w-28 min-w-28">G4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">H</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">H1</button>
-                    <button class="btn max-w-28 min-w-28">H2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">H3</button>
-                    <button class="btn max-w-28 min-w-28">H4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">I</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">I1</button>
-                    <button class="btn max-w-28 min-w-28">I2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">I3</button>
-                    <button class="btn max-w-28 min-w-28">I4</button>
-
-                </div>
-            </div>
-            <!-- bus ticket A section  -->
-            <div class="flex gap-6">
-                <button class=" max-w-2 min-w-2">J</button>
-                <div>
-                    <button class="btn max-w-28 min-w-28">J1</button>
-                    <button class="btn max-w-28 min-w-28">J2</button>
-
-                </div>
-                <div>
-                    <button class="btn max-w-28 min-w-28">J3</button>
-                    <button class="btn max-w-28 min-w-28">J4</button>
-
-                </div>
-            </div>
-
-
-        </section>
-
-    </div>
-
-     
-
-   </div>
 
     <!--********************************  footer section start *************************************  -->
     <footer>
 
     </footer>
+
+    <script src="./utiliti.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
