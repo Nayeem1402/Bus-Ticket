@@ -258,7 +258,7 @@
 
                         </div>
                         <div>
-                            <button onclick="clicked('b3')" id="B3"
+                            <button onclick="clicked('B3')" id="B3"
                                 class="btn sit sitName max-w-28 min-w-28">B3</button>
                             <button onclick="clicked('B4')" id="B4"
                                 class="btn sit sitName max-w-28 min-w-28">B4</button>
@@ -420,14 +420,14 @@
                             <hr class="  border-[#03071233] border-2 ">
                             <div class="flex justify-between">
                                 <h4>total</h4>
-                                <h3 id="main-total">50</h3>
+                                <h3 id="main-total"> 00</h3>
                             </div>
 
                             <!-- coupon fild  -->
                             <div class="w-[400px]">
-                                <input type="text" class="h-14 max-w-[400px]  w-auto  inter absolute rounded-2xl px-4"
-                                    placeholder="Have any copupon?"> <button
-                                    class="bg-[#1DD100] relative  top-1  px-5 py-3 rounded-2xl text-white inter font-semibold left-56 lg:left-72 ">Apply</button>
+                                <input id="input-fild" type="text" class="h-14 max-w-[400px]  w-auto  inter absolute rounded-2xl px-4"
+                                    placeholder="Have any copupon?"> 
+                                    <button id="c-btn" disabled class="btn bg-[#1DD100]  relative  top-1  px-5 py-3 rounded-2xl text-white inter font-semibold left-56 lg:left-72 ">Apply</button>
                             </div>
                             <br>
                             <!-- grand price -->
@@ -475,8 +475,34 @@
 
 
     <!--********************************  footer section start *************************************  -->
-    <footer>
+    <footer class="  p-10 bg-[#030712] text-neutral-content capitalize lg:px-32 py-28 ">
+        <div class="flex mb-10 justify-center mx-auto lg:justify-between    lg:mb-12 ">
+            <aside>
+                <h2 class="raleway text-4xl font-extrabold  ">N-ticket</h2>
+                <p class="inter text-[#FFFFFFCC ]">P-Ticket is a digital platform to make your <br>
+                    daily commuting better.</p>
+            </aside>
+            <nav>
+                <h6 class="footer-title raleway">Download our app</h6>
+                <div class="items-center flex gap-3">
 
+                    <div><img src="./images/playstore.png" alt=""></div>
+                    <div class="text-white ">
+                        <p>GET IT ON </p>
+                        <H3 class="text-2xl">Google Play</H3>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <hr class="border-dashed border-[#dddee033]   border-2 ">
+        <div class="flex justify-between mt-6">
+            <div class="text-[#FFFFFFB3]">&copy;all rights reserved, P-Ticket services limited.2024</div>
+            <div class="inter font-semibold flex gap-8">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
     </footer>
 
     <script src="./index.js"></script>

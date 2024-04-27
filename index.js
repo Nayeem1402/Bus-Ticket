@@ -1,4 +1,4 @@
-  
+
 let clickedIds = [];
 
 function clicked(id) {
@@ -6,19 +6,19 @@ function clicked(id) {
     let sitNumbers = document.getElementById("sitNumbers");
     let button = document.getElementById(id);
     let currentColor = button.style.backgroundColor;
-    
-    
+
+
 
     if (clickedIds.includes(id)) {
         clickedIds = clickedIds.filter(item => item !== id);
     } else {
         if (clickedIds.length >= 4) {
             alert("You can only select up to 4 seats.");
-            return; 
+            return;
         }
         clickedIds.push(id);
     }
-    let newColor = currentColor ===  "#1DD100" ? "#ffff" : "#1DD100";
+    let newColor = currentColor === "#1DD100" ? "#ffff" : "#1DD100";
 
     button.style.backgroundColor = newColor;
 
@@ -26,7 +26,7 @@ function clicked(id) {
 
     sitNumbers.innerHTML = '';
 
-    for(const id of clickedIds) {
+    for (const id of clickedIds) {
         let div = document.createElement('div');
 
         div.innerHTML = `
@@ -41,10 +41,40 @@ function clicked(id) {
 
         sitNumbers.appendChild(div);
     }
+    
+    function mainTotal(){
+        const totalMoney  = 500 * clickedIds.length;
+        return totalMoney;
+
+    } 
 }
 
-
-// main total area 
-
  
- 
+//  document.getElementById('input-fild').addEventListener('keyup', function(event){
+//     const text = event.target.value;
+    
+//     if(text === 'NEW15'){
+//        const cpupon = document.getElementById('c-btn');
+//         cpupon.removeAttribute('disabled ')
+//         console.log('this is set');
+//     }
+//     else{
+//        text.s
+//     }
+//     console.log(text);
+//  })
+
+
+
+document.getElementById('input-fild').addEventListener('keyup', function(evet){
+    const text = evet.target.value;
+
+    const applyBtn = document.getElementById('c-btn');
+    if(text === 'NEW15'|| text === 'Couple 20'){
+        applyBtn.removeAttribute('disabled')
+    }
+    else{
+        applyBtn.setAttribute ('disabled' , true)
+    }
+    console.log(text );
+})
