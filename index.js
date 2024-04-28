@@ -42,6 +42,12 @@ function clicked(id) {
         sitNumbers.appendChild(div);
     }
     
+    const sitLeft = document.getElementById('sit-count')
+        sitLeft.innerText = 40 - clickedIds.length;
+
+     
+
+
     function mainTotal(){
         const totalMoney  = 500 * clickedIds.length;
         return totalMoney;
